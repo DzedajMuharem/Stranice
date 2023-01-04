@@ -1,0 +1,47 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 15vh;
+  background-color: rgb(18, 18, 18);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(80, 181, 80);
+  position: sticky;
+}
+.header img {
+  width: 200px;
+  height: 130px;
+  margin-left: 55%;
+}
+.header ul {
+  text-decoration: none;
+  position: relative;
+  left: 35%;
+}
+.header li {
+  display: inline-block;
+  margin: 20px;
+  font-size: 19px;
+}
+.header a {
+  color: white;
+  cursor: pointer;
+}
+.header a:hover {
+  color: rgb(80, 181, 80);
+  transition: all 0.5s ease-in-out;
+}
+.header .fa-search {
+  color: rgb(80, 181, 80);
+  position: relative;
+  left: 36%;
+  cursor: pointer;
+  font-size: 19px;
+}
+.header .fa-search:hover {
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
