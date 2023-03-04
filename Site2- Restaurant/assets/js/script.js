@@ -172,3 +172,11 @@ meni.forEach((item) => {
     let ref = window.open("index2.html", "_self", options);
   });
 });
+
+const cardak = document.querySelector(".cardakBtn");
+console.log(cardak);
+
+cardak.addEventListener("click", function () {
+  let options = "";
+  let ref = window.open("cardak.html", "_self", options);
+});
