@@ -163,10 +163,11 @@ window.addEventListener("mousemove", function (event) {
   }
 });
 
-const meni = document.querySelector(".js");
+const meni = document.querySelectorAll(".js");
 const delete2 = document.querySelectorAll(".delete");
-meni.addEventListener("click", function () {
-  meni.addEventListener("click", function () {
+
+meni.forEach((item) => {
+  item.addEventListener("click", function () {
     let options = "";
     let ref = window.open("index2.html", "_self", options);
   });
