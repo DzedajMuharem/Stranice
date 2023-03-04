@@ -128,7 +128,7 @@
             />
           </a>
 
-          <ul class="navbar-list delete">
+          <ul class="navbar-list">
             <li class="navbar-item">
               <a href="#home" class="navbar-link hover-underline active">
                 <div class="separator"></div>
@@ -137,7 +137,7 @@
               </a>
             </li>
 
-            <li class="navbar-item">
+            <li class="navbar-item nav__link">
               <a href="#menu" class="navbar-link hover-underline">
                 <div class="separator"></div>
 
@@ -145,7 +145,7 @@
               </a>
             </li>
 
-            <li class="navbar-item">
+            <li class="navbar-item nav__link">
               <a href="#about" class="navbar-link hover-underline">
                 <div class="separator"></div>
 
@@ -161,8 +161,8 @@
               </a>
             </li> -->
 
-            <li class="navbar-item">
-              <a href="#" class="navbar-link hover-underline">
+            <li class="navbar-item nav__link">
+              <a href="#kontakt" class="navbar-link hover-underline">
                 <div class="separator"></div>
 
                 <span class="span">Kontakt</span>
@@ -245,7 +245,7 @@
                 Dođite sa porodicom i osetite radost ukusne hrane.
               </p>
 
-              <a href="#" class="btn btn-primary slider-reveal">
+              <a href="#menu" class="btn btn-primary slider-reveal">
                 <span class="text text-1">Pogledajte naš meni.</span>
 
                 <span class="text text-2" aria-hidden="true"
@@ -278,7 +278,7 @@
                 Dođite sa porodicom i osetite radost uživanja u ukusnoj hrani.
               </p>
 
-              <a href="#" class="btn btn-primary slider-reveal">
+              <a href="#menu" class="btn btn-primary slider-reveal">
                 <span class="text text-1">Pogledajte naš meni.</span>
 
                 <span class="text text-2" aria-hidden="true"
@@ -311,7 +311,7 @@
                 Dođite sa porodicom i osetite radost uživanja u ukusnoj hrani.
               </p>
 
-              <a href="#" class="btn btn-primary slider-reveal">
+              <a href="#menu" class="btn btn-primary slider-reveal">
                 <span class="text text-1">Pogledajte naš meni.</span>
 
                 <span class="text text-2" aria-hidden="true"
@@ -383,7 +383,7 @@
                       <a href="#">Doručak</a>
                     </h3>
 
-                    <a href="#" class="btn-text hover-underline label-2"
+                    <a href="#menu" class="btn-text hover-underline label-2"
                       >Pogledajte naš meni.</a
                     >
                   </div>
@@ -413,7 +413,7 @@
                       <a href="#">Predjela</a>
                     </h3>
 
-                    <a href="#" class="btn-text hover-underline label-2"
+                    <a href="#menu" class="btn-text hover-underline label-2"
                       >Pogledajte naš meni.</a
                     >
                   </div>
@@ -443,7 +443,7 @@
                       <a href="#">Pića</a>
                     </h3>
 
-                    <a href="#" class="btn-text hover-underline label-2"
+                    <a href="#menu" class="btn-text hover-underline label-2"
                       >Pogledajte naš meni.</a
                     >
                   </div>
@@ -601,7 +601,7 @@
                 <span class="span body-1">$20.00</span>
               </div>
 
-              <a href="#" class="btn btn-primary">
+              <a href="#" class="btn btn-primary js">
                 <span class="text text-1">Pogledajte ceo meni.</span>
 
                 <span class="text text-2" aria-hidden="true"
@@ -853,13 +853,13 @@
               <span class="span">9:00 pm</span>
             </p> -->
 
-            <div class="btn btn-primary js">
+            <a href="#" class="btn btn-primary js">
               <span class="text text-1">Pogledajte ceo meni.</span>
 
               <span class="text text-2" aria-hidden="true"
                 >Pogledajte ceo meni.</span
               >
-            </div>
+            </a>
 
             <img
               src="./assets/images/shape-5.png"
@@ -1045,6 +1045,7 @@
     <footer
       class="footer section delete has-bg-image text-center"
       style="background-image: url('./assets/images/footer-bg.jpg')"
+      id="kontakt"
     >
       <div class="container">
         <div class="footer-top grid-list">
@@ -1074,23 +1075,29 @@
             <p class="body-4">Open : 09:00 am - 01:00 pm</p>
           </div>
 
-          <ul class="footer-list">
-            <li>
-              <a href="#" class="label-2 footer-link hover-underline"
+          <ul class="footer-list nav__links">
+            <li class="navbar-item">
+              <a
+                href="#home"
+                class="nav__link label-2 footer-link hover-underline"
                 >Pocetna</a
               >
             </li>
 
             <li>
-              <a href="#" class="label-2 footer-link hover-underline">Meni</a>
+              <a href="#menu" class="label-2 footer-link hover-underline"
+                >Meni</a
+              >
             </li>
 
             <li>
-              <a href="#" class="label-2 footer-link hover-underline">O nama</a>
+              <a href="#about" class="label-2 footer-link hover-underline"
+                >O nama</a
+              >
             </li>
 
             <li>
-              <a href="#" class="label-2 footer-link hover-underline"
+              <a href="#kontakt" class="label-2 footer-link hover-underline"
                 >Kontakt</a
               >
             </li>
@@ -1160,294 +1167,5 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <div class="meni2">
-      <div class="pocetni">
-        <h1 class="naslov">Meni</h1>
-      </div>
-      <div class="list">
-        <div class="filter">
-          <h1>Desert</h1>
-        </div>
-        <h1 class="filter">Jela</h1>
-        <h1 class="filter">Pice</h1>
-      </div>
-
-      <section class="section delete menu" aria-label="menu-label" id="menu">
-        <div class="container">
-          <ul class="grid-list">
-            <li>
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-1.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Greek Salad"
-                    class="img-cover"
-                  />
-                </figure>
-
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Greek Salad</a>
-                    </h3>
-
-                    <span class="badge label-1">Seasonal</span>
-
-                    <span class="span title-2">$25.50</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Tomatoes, green bell pepper, sliced cucumber onion, olives,
-                    and feta cheese.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-2.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Lasagne"
-                    class="img-cover"
-                  />
-                </figure>
-
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Lasagne</a>
-                    </h3>
-
-                    <span class="span title-2">$40.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-3.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Butternut Pumpkin"
-                    class="img-cover"
-                  />
-                </figure>
-
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Butternut Pumpkin</a>
-                    </h3>
-
-                    <span class="span title-2">$10.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Typesetting industry lorem Lorem Ipsum is simply dummy text
-                    of the priand.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-4.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Tokusen Wagyu"
-                    class="img-cover"
-                  />
-                </figure>
-
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Tokusen Wagyu</a>
-                    </h3>
-
-                    <span class="badge label-1">New</span>
-
-                    <span class="span title-2">$39.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-5.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Olivas Rellenas"
-                    class="img-cover"
-                  />
-                </figure>
-
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Olivas Rellenas</a>
-                    </h3>
-
-                    <span class="span title-2">$25.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Avocados with crab meat, red onion, crab salad stuffed red
-                    bell pepper and green bell pepper.
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-6.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Opu Fish"
-                    class="img-cover"
-                  />
-                </figure>
-
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Opu Fish</a>
-                    </h3>
-
-                    <span class="span title-2">$49.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-6.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Opu Fish"
-                    class="img-cover"
-                  />
-                </figure>
-
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Opu Fish</a>
-                    </h3>
-
-                    <span class="span title-2">$49.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-6.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Opu Fish"
-                    class="img-cover"
-                  />
-                </figure>
-
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Opu Fish</a>
-                    </h3>
-
-                    <span class="span title-2">$49.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <!-- <p class="menu-text text-center">
-            During winter daily from <span class="span">7:00 pm</span> to
-            <span class="span">9:00 pm</span>
-          </p> -->
-        </div>
-      </section>
-    </div>
   </body>
 </html>
