@@ -8,12 +8,12 @@ const filter = (button) => {
 
   if (category === "sve") {
     portfolioItems.forEach((item) => {
-      item.style.display = "flex";
+      item.style.display = "grid";
     });
   }
   portfolioItems.forEach((item) => {
     if (item.getAttribute("data-category").includes(category)) {
-      item.style.display = "flex";
+      item.style.display = "grid";
     }
   });
 };
