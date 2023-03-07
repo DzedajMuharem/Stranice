@@ -68,29 +68,34 @@
         </div>
         <div class="row pocetni">
           <div class="col-sm-12 col-md-12">
-            <h1 class="naslov">Meni</h1>
+            <h1 class="naslov">MENÜ</h1>
           </div>
         </div>
 
         <div class="row list">
-          <div class="col-sm-12 col-md-3">
+          <div class="col-sm-12 col-md-2">
             <button data-category="sve" onclick="filter(this)">
-              <h1>Ceo Meni</h1>
+              <h1>GESAMTES MENÜ</h1>
             </button>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <button data-category="pice" onclick="filter(this)">
-              <h1>Pice</h1>
+          <div class="col-sm-12 col-md-2">
+            <button data-category="FRÜHSTÜCK" onclick="filter(this)">
+              <h1>FRÜHSTÜCK</h1>
             </button>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <button data-category="jela" onclick="filter(this)">
-              <h1>Jela</h1>
+          <div class="col-sm-12 col-md-2">
+            <button data-category="Mittagessen" onclick="filter(this)">
+              <h1>MITTAGESSEN</h1>
             </button>
           </div>
-          <div class="col-sm-12 col-md-3">
-            <button data-category="desert" onclick="filter(this)">
-              <h1>Desert</h1>
+          <div class="col-sm-12 col-md-2">
+            <button data-category="GETRÄNKE" onclick="filter(this)">
+              <h1>GETRÄNKE</h1>
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <button data-category="Dessert" onclick="filter(this)">
+              <h1>DESSERT</h1>
             </button>
           </div>
         </div>
@@ -98,238 +103,2416 @@
 
       <section class="section delete menu" aria-label="menu-label" id="menu">
         <div class="container">
-          <ul class="grid-list">
-            <li class="menu-card2" data-category="pice">
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-1.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Greek Salad"
-                    class="img-cover"
-                  />
-                </figure>
+          <div class="ceoMeni">
+            <h1 class="menu-card2" data-category="FRÜHSTÜCK">FRÜHSTÜCK</h1>
+            <ul class="grid-list menu-card2" data-category="FRÜHSTÜCK">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
 
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Greek Salad</a>
-                    </h3>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
 
-                    <span class="badge label-1">Seasonal</span>
+                      <span class="badge label-1">Seasonal</span>
 
-                    <span class="span title-2">$25.50</span>
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
                   </div>
-
-                  <p class="card-text label-1">
-                    Tomatoes, green bell pepper, sliced cucumber onion, olives,
-                    and feta cheese.
-                  </p>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="menu-card2" data-category="jela">
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-2.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Lasagne"
-                    class="img-cover"
-                  />
-                </figure>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
 
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Lasagne</a>
-                    </h3>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
 
-                    <span class="span title-2">$40.00</span>
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
                   </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices
-                  </p>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="menu-card2" data-category="jela">
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-2.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Lasagne"
-                    class="img-cover"
-                  />
-                </figure>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
 
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Lasagne</a>
-                    </h3>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
 
-                    <span class="span title-2">$40.00</span>
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
                   </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices
-                  </p>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="menu-card2" data-category="pice">
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-5.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Olivas Rellenas"
-                    class="img-cover"
-                  />
-                </figure>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
 
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Olivas Rellenas</a>
-                    </h3>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
 
-                    <span class="span title-2">$25.00</span>
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
                   </div>
-
-                  <p class="card-text label-1">
-                    Avocados with crab meat, red onion, crab salad stuffed red
-                    bell pepper and green bell pepper.
-                  </p>
                 </div>
-              </div>
-            </li>
+              </li>
+            </ul>
+            <h3
+              class="dorucakRok menu-card2 col-sm-12 col-md-12"
+              data-category="FRÜHSTÜCK"
+            >
+              FRÜHSTÜCK WIRD TÄGLICH BIS 13 UHR SERVIERT.
+            </h3>
+            <h3
+              class="menu-card2 col-sm-12 col-md-12"
+              data-category="FRÜHSTÜCK"
+            >
+              Beilagen & Extras:
+            </h3>
+            <p class="menu-card2 col-sm-12 col-md-12" data-category="FRÜHSTÜCK">
+              Kajmak 2,90 € <br />
+              Gegrilltes Gemüse 8,00 € <br />
+              Brot 1,50 € <br />
+              Hausgemachter Frischkäse 4,50 € Paprika in Sauerrahm 4,00 €
+            </p>
+            <br class="menu-card2" data-category="FRÜHSTÜCK" />
+            <hr class="menu-card2" data-category="FRÜHSTÜCK" />
+            <h1 class="menu-card2" data-category="Mittagessen">SUPPEN</h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
 
-            <li class="menu-card2" data-category="desert">
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-6.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Opu Fish"
-                    class="img-cover"
-                  />
-                </figure>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
 
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Opu Fish</a>
-                    </h3>
+                      <span class="badge label-1">Seasonal</span>
 
-                    <span class="span title-2">$49.00</span>
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
                   </div>
-
-                  <p class="card-text Pice label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices
-                  </p>
                 </div>
-              </div>
-            </li>
-            <li class="menu-card2" data-category="desert">
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-6.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Opu Fish"
-                    class="img-cover"
-                  />
-                </figure>
+              </li>
 
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Opu Fish</a>
-                    </h3>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
 
-                    <span class="span title-2">$49.00</span>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
                   </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices
-                  </p>
                 </div>
-              </div>
-            </li>
-            <li class="menu-card2" data-category="desert">
-              <div class="menu-card hover:card">
-                <figure
-                  class="card-banner img-holder"
-                  style="--width: 100; --height: 100"
-                >
-                  <img
-                    src="./assets/images/menu-6.png"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                    alt="Opu Fish"
-                    class="img-cover"
-                  />
-                </figure>
+              </li>
 
-                <div>
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Opu Fish</a>
-                    </h3>
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
 
-                    <span class="span title-2">$49.00</span>
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
                   </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings
-                    and spices
-                  </p>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="Mittagessen">
+              VORSPEISETELLER
+            </h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="Mittagessen">SALAT</h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="Mittagessen">SANDWICH</h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="Mittagessen">PASTA</h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="Mittagessen">
+              STEINOFENPIZZA
+            </h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="Mittagessen">
+              BURGER VOM LAVASTEINGRILL
+            </h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="Mittagessen">KINDER MENÜ</h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="Mittagessen">
+              GRILLSPEZIALITÄTEN
+            </h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="Mittagessen">
+              GRILLSPEZIALITÄTEN
+            </h1>
+            <ul class="grid-list menu-card2" data-category="Mittagessen">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="Mittagessen" />
+            <hr class="menu-card2" data-category="Mittagessen" />
+            <h1 class="menu-card2" data-category="GETRÄNKE">SOFTDRINKS</h1>
+            <ul class="grid-list menu-card2" data-category="GETRÄNKE">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="GETRÄNKE" />
+            <hr class="menu-card2" data-category="GETRÄNKE" />
+            <h1 class="menu-card2" data-category="GETRÄNKE">SÄFTE</h1>
+            <ul class="grid-list menu-card2" data-category="GETRÄNKE">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="GETRÄNKE" />
+            <hr class="menu-card2" data-category="GETRÄNKE" />
+            <h1 class="menu-card2" data-category="GETRÄNKE">
+              FRISCH GEPRESSTE SÄFTE
+            </h1>
+            <ul class="grid-list menu-card2" data-category="GETRÄNKE">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="GETRÄNKE" />
+            <hr class="menu-card2" data-category="GETRÄNKE" />
+            <h1 class="menu-card2" data-category="GETRÄNKE">KAFFEE</h1>
+            <ul class="grid-list menu-card2" data-category="GETRÄNKE">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="GETRÄNKE" />
+            <hr class="menu-card2" data-category="GETRÄNKE" />
+            <h1 class="menu-card2" data-category="GETRÄNKE">TEE</h1>
+            <ul class="grid-list menu-card2" data-category="GETRÄNKE">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <br class="menu-card2" data-category="GETRÄNKE" />
+            <hr class="menu-card2" data-category="GETRÄNKE" />
+            <h1 class="menu-card2" data-category="Dessert">DESSERT</h1>
+            <ul class="grid-list menu-card2" data-category="Dessert">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Greek Salad</a>
+                      </h3>
+
+                      <span class="badge label-1">Seasonal</span>
+
+                      <span class="span title-2">$25.50</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and feta cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Lasagne</a>
+                      </h3>
+
+                      <span class="span title-2">$40.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Butternut Pumpkin</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Typesetting industry lorem Lorem Ipsum is simply dummy
+                      text of the priand.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tokusen Wagyu</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$39.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables, cheeses, ground meats, tomato sauce,
+                      seasonings and spices.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
