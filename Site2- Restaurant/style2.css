@@ -2007,3 +2007,12 @@ body.nav-active {
 .dorucakRok {
   text-align: center;
 }
+
+.vors {
+  text-align: center;
+}
+
+.sekcije {
+  background-image: url(./assets/images/photo.jpg);
+  background-size: cover;
+}
