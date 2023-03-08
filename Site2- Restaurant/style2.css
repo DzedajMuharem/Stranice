@@ -50,8 +50,8 @@
     */
 
   /* font-family */
-  --fontFamily-forum: "Forum", cursive;
-  --fontFamily-dm_sans: "DM Sans", sans-serif;
+  --fontFamily-forum: "Oswald", cursive;
+  --fontFamily-dm_sans: "Oswald", sans-serif;
 
   /* font-size */
   --fontSize-display-1: calc(1.3rem + 6.7vw);
@@ -2015,4 +2015,17 @@ body.nav-active {
 .SUPPEN {
   background-image: url(./assets/images/photo.jpg);
   background-size: cover;
+}
+
+.ceoMeni h1 {
+  text-align: center;
+}
+.ceoMeni h3 {
+  text-align: center;
+}
+.ceoMeni h2 {
+  font-size: 30px;
+}
+.ceoMeni h4 {
+  font-size: 24px;
 }
